@@ -9,7 +9,7 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        git 'git@github.com:arunsaxena01/DevOps-Demo-WebApp.git'
+        git(url: 'git@github.com:arunsaxena01/DevOps-Demo-WebApp.git', branch: 'master', credentialsId: '7e7013a866dd4cc5bc71f34a573cdd58a44a29f4')
       }
     }
 
